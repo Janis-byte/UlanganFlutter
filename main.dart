@@ -55,6 +55,20 @@ class CalcButtonState extends State<CalcButton> {
           print('$value\t${details.globalPosition}');
         }
       },
+      theme: const CalculatorThemeData(
+        borderColor: Colors.black,
+        borderWidth: 2,
+        displayColor: Colors.black,
+        displayStyle: TextStyle(fontSize: 80, color: Colors.yellow),
+        expressionColor: Colors.indigo,
+        expressionStyle: TextStyle(fontSize: 20, color: Colors.white),
+        operatorColor: Colors.pink,
+        operatorStyle: TextStyle(fontSize: 30, color: Colors.white),
+        commandColor: Colors.orange,
+        commandStyle: TextStyle(fontSize: 30, color: Colors.white),
+        numColor: Colors.grey,
+        numStyle: TextStyle(fontSize: 50, color: Colors.white),
+      ),
     );
     return OutlinedButton(
       child: Text(_currentValue.toString()),
